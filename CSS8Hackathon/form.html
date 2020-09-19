@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title> Website over Vlees </title>
+</head>
+
+<body class="grid">
+    <header class="box header">
+        <img class="picture" width="90%" src="z-beef.jpg" alt="beef">
+        <h1>Prachtig Vlees</h1>
+
+
+
+    </header>
+    <nav class="box nav">
+        <ul class="container">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="black.html">Black Angus</a></li>
+            <li><a href="wagyu.html">Wagyu</a></li>
+            <li><a href="form.html">Grillmasters contest</a></li>
+            <li>Zoeken <input class="searchbar" type="search"> </li>
+
+        </ul>
+
+    </nav>
+
+    <main class="box main">
+        <section>
+            <img class="picture" width="90%" src="fire.jpg" alt="fire">
+            <br>
+            <h2>Schrijf je in voor de Grill Masters Contest </h2>
+
+            <p>
+                Ben jij al jaren de Amateur Grillmaster? geef je dan op voor de Grill Masters Contest komende zomer en
+                win een jaar lang gratis Black Angus rundvlees voor op de BBQ! Mis deze kans niet!
+            </p>
+        </section>
+
+
+        <form name="recipe" method="POST" data-netlify="true">
+            <p>
+                <label for="name"> Naam:</label>
+                <br>
+                <input type="text" name="naam" id="name" required>
+            </p>
+            <p>
+                <label for="email"> Email</label>
+                <br>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="telephone"> Telefoonnummer</label>
+                <br>
+                <input type="tel" name="telephone" id="telephone" required>
+            </p>
+            <p>
+                <label for="date"> Geboortedatum</label>
+                <br>
+                <input type="date" name="date" id="date" min="2020-06-10" required>
+            </p>
+            <p>
+                <label> Geslacht</label>
+                <br>
+                <label for="male"> Man </label>
+                <input type="radio" name="gender" id="male">
+                <label for="female"> Vrouw </label>
+                <input type="radio" name="gender" id="female">
+            </p>
+            <p>
+                <label> Favoriete Rundvlees </label>
+                <br>
+                <label for="blackangus"> Black Angus <input type="checkbox" name="blackangus" id="blackangus"> </label>
+                <label for="wagyu"> Wagyu <input type="checkbox" name="wagyu" id="wagyu"> </label>
+            </p>
+            <p>
+                <label for="textarea"> Opmerkingen</label>
+                <br>
+                <textarea rows="10" name="textarea" id="textarea"></textarea>
+            </p>
+            <p>
+                <label for="url"> Favoriete BBQwebsite </label>
+                <input type="url" name="url" id="url">
+            </p>
+            <input type="hidden" name="hidden" value="hi" />
+            <p>
+                <label for="reset"> Maak dit formulier leeg </label>
+                <input type="reset" name="reset" id="reset">
+
+            </p>
+            <p>
+                <button class="button" type="submit"> Meld je aan! </button>
+            </p>
+
+        </form>
+        <img class="picture" width="90%" src="grillmasters.jpg" alt="grillmasters logo">
+        <br>
+
+
+
+    </main>
+
+    <footer class="box footer">
+        Copyright 2020
+        <br>
+        Steakhouse Grillmasters
+        <br>Langestraat 54, 7511 HC Enschede
+        <br>
+        053-4363405
+        <br>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.285047013724!2d6.893726215195802!3d52.22003886616884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b81473bf7c9453%3A0x3a7f53efba5921e1!2sArgentijns%20Steakhouse%20Grillmasters!5e0!3m2!1snl!2snl!4v1598612000959!5m2!1snl!2snl"
+            width="200" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+    </footer>
+
+
+</body>
+
+</html>
